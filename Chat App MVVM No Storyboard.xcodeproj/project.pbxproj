@@ -13,6 +13,12 @@
 		A73E52912653994A00872103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73E528F2653994A00872103 /* Main.storyboard */; };
 		A73E52932653994A00872103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73E52922653994A00872103 /* Assets.xcassets */; };
 		A73E52962653994A00872103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73E52942653994A00872103 /* LaunchScreen.storyboard */; };
+		A73E52A626539A2800872103 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E52A526539A2800872103 /* ConversationsController.swift */; };
+		A7BF00052653BA24005A95DB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00042653BA24005A95DB /* LoginController.swift */; };
+		A7BF00082653BA38005A95DB /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00072653BA38005A95DB /* RegistrationController.swift */; };
+		A7BF000B2653BF4E005A95DB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF000A2653BF4E005A95DB /* Extentions.swift */; };
+		A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00282653D58D005A95DB /* InputConteinerView.swift */; };
+		A7BF00412653E692005A95DB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00402653E692005A95DB /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		A73E52922653994A00872103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73E52952653994A00872103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73E52972653994A00872103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73E52A526539A2800872103 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		A7BF00042653BA24005A95DB /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A7BF00072653BA38005A95DB /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		A7BF000A2653BF4E005A95DB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		A7BF00282653D58D005A95DB /* InputConteinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputConteinerView.swift; sourceTree = "<group>"; };
+		A7BF00402653E692005A95DB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 		A73E52882653994A00872103 /* Chat App MVVM No Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A73E52A42653999600872103 /* Model */,
+				A73E52A32653999400872103 /* View */,
+				A73E52A22653999300872103 /* ViewModel */,
+				A73E52A12653999100872103 /* Controller */,
+				A73E529F2653998400872103 /* API */,
+				A73E529E2653997600872103 /* Utilis */,
 				A73E52892653994A00872103 /* AppDelegate.swift */,
 				A73E528B2653994A00872103 /* SceneDelegate.swift */,
 				A73E528D2653994A00872103 /* ViewController.swift */,
@@ -65,6 +83,62 @@
 				A73E52972653994A00872103 /* Info.plist */,
 			);
 			path = "Chat App MVVM No Storyboard";
+			sourceTree = "<group>";
+		};
+		A73E529E2653997600872103 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF000A2653BF4E005A95DB /* Extentions.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		A73E529F2653998400872103 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A73E52A12653999100872103 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF00032653B9FE005A95DB /* Authentication */,
+				A73E52A526539A2800872103 /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A73E52A22653999300872103 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A73E52A32653999400872103 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF00282653D58D005A95DB /* InputConteinerView.swift */,
+				A7BF00402653E692005A95DB /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A73E52A42653999600872103 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7BF00032653B9FE005A95DB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF00042653BA24005A95DB /* LoginController.swift */,
+				A7BF00072653BA38005A95DB /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +213,13 @@
 			files = (
 				A73E528E2653994A00872103 /* ViewController.swift in Sources */,
 				A73E528A2653994A00872103 /* AppDelegate.swift in Sources */,
+				A73E52A626539A2800872103 /* ConversationsController.swift in Sources */,
 				A73E528C2653994A00872103 /* SceneDelegate.swift in Sources */,
+				A7BF00082653BA38005A95DB /* RegistrationController.swift in Sources */,
+				A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */,
+				A7BF00052653BA24005A95DB /* LoginController.swift in Sources */,
+				A7BF000B2653BF4E005A95DB /* Extentions.swift in Sources */,
+				A7BF00412653E692005A95DB /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
