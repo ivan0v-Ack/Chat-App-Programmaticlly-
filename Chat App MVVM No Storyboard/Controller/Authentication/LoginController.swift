@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class LoginController: UIViewController {
     
@@ -31,7 +33,7 @@ class LoginController: UIViewController {
     
     private lazy var logginBtn: CustomButton = {
         let button = CustomButton(btnText: "Log In")
-        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     private let emailTextField = CustomTextField(placeHolderText: "Email", isSecure: false)
@@ -52,29 +54,41 @@ class LoginController: UIViewController {
     }
     
     // MARK: - Selectors
-    @objc func handleSignUp() {
-        print("DEBUG: clickSignUp!")
+    @objc func handleLogin() {
+        guard let email = emailTextField.text,
+              let password = passTextField.text else { return }
+        
+        showLoader(true, withText: "Logging in")
+        AuthService.shared.logUserIn(withEmail: email, password: password) { (resultData, error) in
+            if let error = error {
+               
+                print("DEBUG: Failed to login user with error \(error.localizedDescription)")
+                self.showLoader(false)
+                return
+            }
+            self.showLoader(false)
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+        
+        
     }
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
         navigationController?.pushViewController(controller, animated: true)
     }
     @objc func textDidChange(sender: UITextField) {
+        
         if sender == emailTextField {
             viewModel.email = sender.text
         }else {
             viewModel.password = sender.text
         }
         
-        checkFormStatus()
+        checkForStatus()
     }
     
     // MARK: - Helpers
-    func checkFormStatus() {
-        logginBtn.isEnabled = viewModel.formIsVaild
-        logginBtn.backgroundColor = viewModel.formIsVaild ? .red : #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-      
-    }
     
     func configureUI () {
         navigationController?.navigationBar.isHidden = true
@@ -104,13 +118,14 @@ class LoginController: UIViewController {
     
 }
 
-extension UIViewController {
-    func configureGradientLayer() {
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
-        gradient.locations = [0,1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
-    }
-}
 
+
+extension LoginController: AuthenticationStatus {
+    func checkForStatus() {
+        logginBtn.isEnabled = viewModel.formIsVaild ? true : false
+        logginBtn.backgroundColor = viewModel.formIsVaild ? .red : #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        
+    }
+    
+    
+}

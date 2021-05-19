@@ -6,5 +6,10 @@ target 'Chat App MVVM No Storyboard' do
   use_frameworks!
 
   # Pods for Chat App MVVM No Storyboard
-
+pod 'Firebase/Core'
+pod 'Firebase/Storage'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore' 
+pod 'SDWebImage', '~> 5.11'
+pod 'JGProgressHUD', '~> 2.2'
 end
