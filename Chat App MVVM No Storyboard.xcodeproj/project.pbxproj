@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7AE5BB6580D394892C257D74 /* Pods_Chat_App_MVVM_No_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0A6C6623DFE63420CAA40E /* Pods_Chat_App_MVVM_No_Storyboard.framework */; };
 		A730DFA626552D6200F1137B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A730DFA526552D6200F1137B /* GoogleService-Info.plist */; };
+		A73CC6DA26568A4200279F66 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6D926568A4200279F66 /* NewMessageController.swift */; };
+		A73CC6DD265691A200279F66 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6DC265691A200279F66 /* UserCell.swift */; };
+		A73CC6E02656987800279F66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6DF2656987800279F66 /* User.swift */; };
+		A73CC6E3265699C200279F66 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6E2265699C200279F66 /* Service.swift */; };
 		A73E528A2653994A00872103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E52892653994A00872103 /* AppDelegate.swift */; };
 		A73E528C2653994A00872103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E528B2653994A00872103 /* SceneDelegate.swift */; };
 		A73E528E2653994A00872103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E528D2653994A00872103 /* ViewController.swift */; };
@@ -30,6 +34,10 @@
 		1B0A6C6623DFE63420CAA40E /* Pods_Chat_App_MVVM_No_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_App_MVVM_No_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7943CA91C99F1813943ADC /* Pods-Chat App MVVM No Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App MVVM No Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Chat App MVVM No Storyboard/Pods-Chat App MVVM No Storyboard.release.xcconfig"; sourceTree = "<group>"; };
 		A730DFA526552D6200F1137B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A73CC6D926568A4200279F66 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		A73CC6DC265691A200279F66 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A73CC6DF2656987800279F66 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A73CC6E2265699C200279F66 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A73E52862653994A00872103 /* Chat App MVVM No Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat App MVVM No Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73E52892653994A00872103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73E528B2653994A00872103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				A76B0CE52655638C00D63D92 /* AuthService.swift */,
+				A73CC6E2265699C200279F66 /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -139,6 +148,7 @@
 			children = (
 				A7BF00032653B9FE005A95DB /* Authentication */,
 				A73E52A526539A2800872103 /* ConversationsController.swift */,
+				A73CC6D926568A4200279F66 /* NewMessageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 			children = (
 				A7BF00282653D58D005A95DB /* InputConteinerView.swift */,
 				A7BF00402653E692005A95DB /* CustomUI.swift */,
+				A73CC6DC265691A200279F66 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 		A73E52A42653999600872103 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A73CC6DF2656987800279F66 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,12 +318,16 @@
 				A76B0CE62655638C00D63D92 /* AuthService.swift in Sources */,
 				A73E52A626539A2800872103 /* ConversationsController.swift in Sources */,
 				A73E528C2653994A00872103 /* SceneDelegate.swift in Sources */,
+				A73CC6DD265691A200279F66 /* UserCell.swift in Sources */,
 				A7BF00082653BA38005A95DB /* RegistrationController.swift in Sources */,
+				A73CC6E02656987800279F66 /* User.swift in Sources */,
+				A73CC6E3265699C200279F66 /* Service.swift in Sources */,
 				A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */,
 				A7BF00052653BA24005A95DB /* LoginController.swift in Sources */,
 				A7BF000B2653BF4E005A95DB /* Extentions.swift in Sources */,
 				A77072A62654439B00D0AB7F /* LoginViewModel.swift in Sources */,
 				A7BF00412653E692005A95DB /* CustomUI.swift in Sources */,
+				A73CC6DA26568A4200279F66 /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
