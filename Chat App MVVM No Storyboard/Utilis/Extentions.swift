@@ -92,3 +92,5 @@ func showLoader(_ show: Bool, withText text: String? = "Loading") {
     }
 
 }
+
+

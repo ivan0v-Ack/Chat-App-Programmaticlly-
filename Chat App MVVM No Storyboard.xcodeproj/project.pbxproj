@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7AE5BB6580D394892C257D74 /* Pods_Chat_App_MVVM_No_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0A6C6623DFE63420CAA40E /* Pods_Chat_App_MVVM_No_Storyboard.framework */; };
+		A710C3F52664E56900F798FE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C3F42664E56900F798FE /* MessageCell.swift */; };
+		A710C3F826660BF400F798FE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C3F726660BF400F798FE /* Message.swift */; };
+		A710C3FB266614BF00F798FE /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C3FA266614BF00F798FE /* MessageViewModel.swift */; };
+		A710C41F266655D100F798FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C41E266655D100F798FE /* Constants.swift */; };
+		A710C422266773C100F798FE /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C421266773C100F798FE /* ConversationCell.swift */; };
+		A710C43926677D1200F798FE /* CustomTimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C43826677D1200F798FE /* CustomTimeStamp.swift */; };
+		A710C43C2667814B00F798FE /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A710C43B2667814B00F798FE /* ConversationViewModel.swift */; };
 		A730DFA626552D6200F1137B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A730DFA526552D6200F1137B /* GoogleService-Info.plist */; };
 		A73CC6DA26568A4200279F66 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6D926568A4200279F66 /* NewMessageController.swift */; };
 		A73CC6DD265691A200279F66 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6DC265691A200279F66 /* UserCell.swift */; };
 		A73CC6E02656987800279F66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6DF2656987800279F66 /* User.swift */; };
 		A73CC6E3265699C200279F66 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6E2265699C200279F66 /* Service.swift */; };
+		A73CC6E62657E90100279F66 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6E52657E90100279F66 /* ChatController.swift */; };
+		A73CC6E92657F32400279F66 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CC6E82657F32400279F66 /* CustomInputAccessoryView.swift */; };
 		A73E528A2653994A00872103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E52892653994A00872103 /* AppDelegate.swift */; };
 		A73E528C2653994A00872103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E528B2653994A00872103 /* SceneDelegate.swift */; };
 		A73E528E2653994A00872103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E528D2653994A00872103 /* ViewController.swift */; };
@@ -33,11 +42,20 @@
 /* Begin PBXFileReference section */
 		1B0A6C6623DFE63420CAA40E /* Pods_Chat_App_MVVM_No_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_App_MVVM_No_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7943CA91C99F1813943ADC /* Pods-Chat App MVVM No Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App MVVM No Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Chat App MVVM No Storyboard/Pods-Chat App MVVM No Storyboard.release.xcconfig"; sourceTree = "<group>"; };
+		A710C3F42664E56900F798FE /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		A710C3F726660BF400F798FE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A710C3FA266614BF00F798FE /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		A710C41E266655D100F798FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A710C421266773C100F798FE /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		A710C43826677D1200F798FE /* CustomTimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimeStamp.swift; sourceTree = "<group>"; };
+		A710C43B2667814B00F798FE /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		A730DFA526552D6200F1137B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A73CC6D926568A4200279F66 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		A73CC6DC265691A200279F66 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A73CC6DF2656987800279F66 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A73CC6E2265699C200279F66 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A73CC6E52657E90100279F66 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		A73CC6E82657F32400279F66 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		A73E52862653994A00872103 /* Chat App MVVM No Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat App MVVM No Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73E52892653994A00872103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73E528B2653994A00872103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				A7BF000A2653BF4E005A95DB /* Extentions.swift */,
+				A710C41E266655D100F798FE /* Constants.swift */,
+				A710C43826677D1200F798FE /* CustomTimeStamp.swift */,
 			);
 			path = Utilis;
 			sourceTree = "<group>";
@@ -149,6 +169,7 @@
 				A7BF00032653B9FE005A95DB /* Authentication */,
 				A73E52A526539A2800872103 /* ConversationsController.swift */,
 				A73CC6D926568A4200279F66 /* NewMessageController.swift */,
+				A73CC6E52657E90100279F66 /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				A75CB1432654DB9100F5FC83 /* Authentication */,
+				A710C3FA266614BF00F798FE /* MessageViewModel.swift */,
+				A710C43B2667814B00F798FE /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,6 +190,9 @@
 				A7BF00282653D58D005A95DB /* InputConteinerView.swift */,
 				A7BF00402653E692005A95DB /* CustomUI.swift */,
 				A73CC6DC265691A200279F66 /* UserCell.swift */,
+				A73CC6E82657F32400279F66 /* CustomInputAccessoryView.swift */,
+				A710C3F42664E56900F798FE /* MessageCell.swift */,
+				A710C421266773C100F798FE /* ConversationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				A73CC6DF2656987800279F66 /* User.swift */,
+				A710C3F726660BF400F798FE /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,21 +340,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73E528E2653994A00872103 /* ViewController.swift in Sources */,
+				A710C41F266655D100F798FE /* Constants.swift in Sources */,
 				A75CB1412654DB8400F5FC83 /* RegistrationViewModel.swift in Sources */,
 				A73E528A2653994A00872103 /* AppDelegate.swift in Sources */,
 				A76B0CE62655638C00D63D92 /* AuthService.swift in Sources */,
+				A710C43C2667814B00F798FE /* ConversationViewModel.swift in Sources */,
+				A710C3FB266614BF00F798FE /* MessageViewModel.swift in Sources */,
 				A73E52A626539A2800872103 /* ConversationsController.swift in Sources */,
 				A73E528C2653994A00872103 /* SceneDelegate.swift in Sources */,
 				A73CC6DD265691A200279F66 /* UserCell.swift in Sources */,
 				A7BF00082653BA38005A95DB /* RegistrationController.swift in Sources */,
 				A73CC6E02656987800279F66 /* User.swift in Sources */,
 				A73CC6E3265699C200279F66 /* Service.swift in Sources */,
+				A710C3F52664E56900F798FE /* MessageCell.swift in Sources */,
 				A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */,
 				A7BF00052653BA24005A95DB /* LoginController.swift in Sources */,
+				A710C43926677D1200F798FE /* CustomTimeStamp.swift in Sources */,
 				A7BF000B2653BF4E005A95DB /* Extentions.swift in Sources */,
 				A77072A62654439B00D0AB7F /* LoginViewModel.swift in Sources */,
+				A73CC6E62657E90100279F66 /* ChatController.swift in Sources */,
 				A7BF00412653E692005A95DB /* CustomUI.swift in Sources */,
+				A710C422266773C100F798FE /* ConversationCell.swift in Sources */,
+				A710C3F826660BF400F798FE /* Message.swift in Sources */,
 				A73CC6DA26568A4200279F66 /* NewMessageController.swift in Sources */,
+				A73CC6E92657F32400279F66 /* CustomInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

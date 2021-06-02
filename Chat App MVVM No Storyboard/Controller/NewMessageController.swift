@@ -7,9 +7,15 @@
 
 import UIKit
 private let reuseIdentifier = "UserCell"
+
+protocol NewMessageControllerDelegate: class {
+    func controller(_ controller: NewMessageController, wontsToStartChatWith user: User)
+}
+
 class NewMessageController: UITableViewController {
     // MARK: - Properties
     private var usersArray = [User]()
+    weak var delegate: NewMessageControllerDelegate?
     
     
     // MARK: - Lifecycle
@@ -41,7 +47,7 @@ class NewMessageController: UITableViewController {
     
     private func fetchUsers () {
         Service.fetchUsers { users in
-          //  print("DEBUG: \(user.email)")
+       
             DispatchQueue.main.async {
                 self.usersArray = users
                 self.tableView.reloadData()
@@ -60,5 +66,14 @@ extension NewMessageController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
         cell.user = usersArray[indexPath.row]
        return cell
+    }
+}
+
+extension NewMessageController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.controller(self, wontsToStartChatWith: usersArray[indexPath.row])
+        
+        
     }
 }
