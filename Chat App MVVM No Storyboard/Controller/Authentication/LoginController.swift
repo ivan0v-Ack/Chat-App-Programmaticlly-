@@ -8,12 +8,17 @@
 import UIKit
 import Firebase
 
+protocol AuthenticationDelegate: class {
+    func authenticationComplete()
+}
 
 class LoginController: UIViewController {
     
     // MARK: - Properties
     
     private var viewModel = LoginViewModel()
+    
+    weak var delegate: AuthenticationDelegate?
     
     private lazy var iconImage: UIImageView = {
         let iv = UIImageView()
@@ -61,13 +66,12 @@ class LoginController: UIViewController {
         showLoader(true, withText: "Logging in")
         AuthService.shared.logUserIn(withEmail: email, password: password) { (resultData, error) in
             if let error = error {
-               
-                print("DEBUG: Failed to login user with error \(error.localizedDescription)")
                 self.showLoader(false)
+                self.showError(error.localizedDescription)
                 return
             }
             self.showLoader(false)
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authenticationComplete()
             
         }
         
@@ -75,6 +79,7 @@ class LoginController: UIViewController {
     }
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
+        controller.delegate = delegate
         navigationController?.pushViewController(controller, animated: true)
     }
     @objc func textDidChange(sender: UITextField) {

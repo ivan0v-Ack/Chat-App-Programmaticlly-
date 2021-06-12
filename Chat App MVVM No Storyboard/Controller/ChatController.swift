@@ -59,9 +59,11 @@ class ChatController: UICollectionViewController {
     // MARK: - API
     
     private func fetchMessages() {
+        showLoader(true)
         Service.fetchMessages(forUser: user) { arrayMessages in
             self.messages = arrayMessages
             DispatchQueue.main.async {
+                self.showLoader(false)
                 self.collectionView.reloadData()
                 let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
                 self.collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)

@@ -90,7 +90,13 @@ func showLoader(_ show: Bool, withText text: String? = "Loading") {
       
         
     }
-
+    
+    func showError(_ errorMessage: String) {
+        let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 
