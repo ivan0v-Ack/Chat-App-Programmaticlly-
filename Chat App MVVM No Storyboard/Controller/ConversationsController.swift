@@ -47,7 +47,11 @@ class ConversationController: UIViewController {
         present(nav, animated: true, completion: nil)
     }
     @objc func showProfile() {
-        logout()
+        let profileController = ProfileController(style: .insetGrouped)
+        profileController.delegate = self
+        let nav = UINavigationController(rootViewController: profileController)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
     // MARK: - API
     
@@ -152,10 +156,16 @@ extension ConversationController: UITableViewDelegate, UITableViewDataSource {
 extension ConversationController: NewMessageControllerDelegate {
     func controller(_ controller: NewMessageController, wontsToStartChatWith user: User) {
         print("DEBUG: User in conversation controller is \(user.username)")
-        controller.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         showChatController(forUser: user)
         
+    }
+}
+extension ConversationController: ProfileControllerDelegate {
+    func handleLogout() {
+        logout()
     }
     
     
 }
+

@@ -61,9 +61,10 @@ class UserCell: UITableViewCell {
         guard let url = URL(string: user.prfileImageUrl) else {return}
         profileImageView.sd_setImage(with: url)
     }
-    
+
+
   private func configureUI() {
-        backgroundColor = .systemPink
+   
         addSubview(profileImageView)
         profileImageView.anchor(leading: leadingAnchor, centerY: centerYAnchor, size: CGSize(width: 64, height: 64), padding: .init(top: 0, left: 12, bottom: 0, right: 0))
         profileImageView.layer.cornerRadius = 64/2

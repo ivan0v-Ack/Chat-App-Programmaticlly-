@@ -32,11 +32,16 @@
 		A75CB1412654DB8400F5FC83 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CB1402654DB8400F5FC83 /* RegistrationViewModel.swift */; };
 		A76B0CE62655638C00D63D92 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B0CE52655638C00D63D92 /* AuthService.swift */; };
 		A77072A62654439B00D0AB7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77072A52654439B00D0AB7F /* LoginViewModel.swift */; };
+		A7AF35302673A815006C871D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF352F2673A815006C871D /* ProfileViewModel.swift */; };
+		A7AF35332673AB3D006C871D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF35322673AB3D006C871D /* ProfileCell.swift */; };
+		A7AF35362673E9C2006C871D /* ProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF35352673E9C2006C871D /* ProfileFooter.swift */; };
 		A7BF00052653BA24005A95DB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00042653BA24005A95DB /* LoginController.swift */; };
 		A7BF00082653BA38005A95DB /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00072653BA38005A95DB /* RegistrationController.swift */; };
 		A7BF000B2653BF4E005A95DB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF000A2653BF4E005A95DB /* Extentions.swift */; };
 		A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00282653D58D005A95DB /* InputConteinerView.swift */; };
 		A7BF00412653E692005A95DB /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF00402653E692005A95DB /* CustomUI.swift */; };
+		A7D0CE992668BACB00BACABC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0CE982668BACB00BACABC /* ProfileController.swift */; };
+		A7D0CE9C2668BC6000BACABC /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0CE9B2668BC6000BACABC /* ProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,11 +73,16 @@
 		A75CB1402654DB8400F5FC83 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		A76B0CE52655638C00D63D92 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A77072A52654439B00D0AB7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7AF352F2673A815006C871D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A7AF35322673AB3D006C871D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		A7AF35352673E9C2006C871D /* ProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFooter.swift; sourceTree = "<group>"; };
 		A7BF00042653BA24005A95DB /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A7BF00072653BA38005A95DB /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		A7BF000A2653BF4E005A95DB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		A7BF00282653D58D005A95DB /* InputConteinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputConteinerView.swift; sourceTree = "<group>"; };
 		A7BF00402653E692005A95DB /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
+		A7D0CE982668BACB00BACABC /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		A7D0CE9B2668BC6000BACABC /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		D3A78520A8B1140116833F55 /* Pods-Chat App MVVM No Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App MVVM No Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-Chat App MVVM No Storyboard/Pods-Chat App MVVM No Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +180,7 @@
 				A73E52A526539A2800872103 /* ConversationsController.swift */,
 				A73CC6D926568A4200279F66 /* NewMessageController.swift */,
 				A73CC6E52657E90100279F66 /* ChatController.swift */,
+				A7D0CE982668BACB00BACABC /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 				A75CB1432654DB9100F5FC83 /* Authentication */,
 				A710C3FA266614BF00F798FE /* MessageViewModel.swift */,
 				A710C43B2667814B00F798FE /* ConversationViewModel.swift */,
+				A7AF352F2673A815006C871D /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +205,9 @@
 				A73CC6E82657F32400279F66 /* CustomInputAccessoryView.swift */,
 				A710C3F42664E56900F798FE /* MessageCell.swift */,
 				A710C421266773C100F798FE /* ConversationCell.swift */,
+				A7D0CE9B2668BC6000BACABC /* ProfileHeader.swift */,
+				A7AF35322673AB3D006C871D /* ProfileCell.swift */,
+				A7AF35352673E9C2006C871D /* ProfileFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +359,8 @@
 				A75CB1412654DB8400F5FC83 /* RegistrationViewModel.swift in Sources */,
 				A73E528A2653994A00872103 /* AppDelegate.swift in Sources */,
 				A76B0CE62655638C00D63D92 /* AuthService.swift in Sources */,
+				A7D0CE992668BACB00BACABC /* ProfileController.swift in Sources */,
+				A7AF35302673A815006C871D /* ProfileViewModel.swift in Sources */,
 				A710C43C2667814B00F798FE /* ConversationViewModel.swift in Sources */,
 				A710C3FB266614BF00F798FE /* MessageViewModel.swift in Sources */,
 				A73E52A626539A2800872103 /* ConversationsController.swift in Sources */,
@@ -353,6 +370,7 @@
 				A73CC6E02656987800279F66 /* User.swift in Sources */,
 				A73CC6E3265699C200279F66 /* Service.swift in Sources */,
 				A710C3F52664E56900F798FE /* MessageCell.swift in Sources */,
+				A7AF35362673E9C2006C871D /* ProfileFooter.swift in Sources */,
 				A7BF00292653D58D005A95DB /* InputConteinerView.swift in Sources */,
 				A7BF00052653BA24005A95DB /* LoginController.swift in Sources */,
 				A710C43926677D1200F798FE /* CustomTimeStamp.swift in Sources */,
@@ -364,6 +382,8 @@
 				A710C3F826660BF400F798FE /* Message.swift in Sources */,
 				A73CC6DA26568A4200279F66 /* NewMessageController.swift in Sources */,
 				A73CC6E92657F32400279F66 /* CustomInputAccessoryView.swift in Sources */,
+				A7AF35332673AB3D006C871D /* ProfileCell.swift in Sources */,
+				A7D0CE9C2668BC6000BACABC /* ProfileHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
